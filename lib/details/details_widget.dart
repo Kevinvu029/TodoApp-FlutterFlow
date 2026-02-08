@@ -436,7 +436,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                 0.0, 12.0, 0.0, 0.0),
                             iconPadding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context).primary,
+                            color: FlutterFlowTheme.of(context).secondary,
                             textStyle: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(

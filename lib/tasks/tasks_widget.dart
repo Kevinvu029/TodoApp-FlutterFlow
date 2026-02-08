@@ -77,7 +77,7 @@ class _TasksWidgetState extends State<TasksWidget> {
             width: double.infinity,
             height: double.infinity,
             decoration: BoxDecoration(
-              color: FlutterFlowTheme.of(context).primary,
+              color: FlutterFlowTheme.of(context).secondary,
               borderRadius: BorderRadius.circular(50.0),
               border: Border.all(
                 color: FlutterFlowTheme.of(context).primaryText,
@@ -208,7 +208,7 @@ class _TasksWidgetState extends State<TasksWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   iconPadding:
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                  color: FlutterFlowTheme.of(context).primary,
+                  color: FlutterFlowTheme.of(context).secondary,
                   textStyle: FlutterFlowTheme.of(context).labelMedium.override(
                         font: GoogleFonts.inter(
                           fontWeight: FlutterFlowTheme.of(context)
