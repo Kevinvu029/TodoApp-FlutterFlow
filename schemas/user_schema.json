@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "User",
+  "description": "Schema for documents in the Firestore 'users' collection (Todo app).",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "email": {
+      "description": "User email address.",
+      "type": "string",
+      "format": "email"
+    },
+    "display_name": {
+      "description": "User display name.",
+      "type": "string",
+      "minLength": 1
+    },
+    "photo_url": {
+      "description": "Profile photo URL.",
+      "type": "string",
+      "format": "uri"
+    },
+    "uid": {
+      "description": "Firebase Authentication UID.",
+      "type": "string",
+      "minLength": 1
+    },
+    "created_time": {
+      "description": "Timestamp when the user record was created.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "phone_number": {
+      "description": "User phone number (if provided).",
+      "type": "string"
+    },
+    "birthday": {
+      "description": "User birthday timestamp (if provided).",
+      "type": "string",
+      "format": "date-time"
+    },
+    "Hometown": {
+      "description": "User hometown (field name is case-sensitive in Firestore).",
+      "type": "string"
+    }
+  },
+  "required": ["email", "display_name", "uid", "created_time"]
+}
